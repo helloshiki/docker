@@ -17,7 +17,7 @@ services:
         -o "PubkeyAuthentication yes"
         -o "StrictModes no"
         -o "PasswordAuthentication no"
-        -o "GatewayPorts yes"
+        -o "GatewayPorts clientspecified"
       - SSHD_PORT=12334
     logging: {driver: "json-file", options: {max-size: "10m", max-file: "10"}}
     volumes:
